@@ -173,7 +173,7 @@ const skills = [
     icon: "🔐",
     name: "Auth & Integrations",
     desc: "Secure auth systems, payment gateways, and AI integrations.",
-    tags: ["JWT", "HTTP-only Cookies", "RBAC", "Razorpay API", "OpenAI API"],
+    tags: ["JWT", "HTTP-only Cookies", "RBAC", "Razorpay API", "OpenAI API", "Supabase Auth", "Google OAuth"],
   },
   {
     icon: "⬡ OPS",
@@ -186,6 +186,12 @@ const skills = [
     name: "Languages",
     desc: "Comfortable across paradigms. 100+ LeetCode problems solved.",
     tags: ["Python", "JavaScript", "Java", "C"],
+  },
+  {
+    icon: "☁ CDN",
+    name: "Cloud & Media",
+    desc: "Media storage, optimization, and BaaS integrations for production apps.",
+    tags: ["Cloudinary", "Supabase", "FastAPI", "MongoDB Atlas", "Serverless"],
   },
 ];
 
@@ -209,6 +215,23 @@ const projects = [
   },
   {
     num: "02 /",
+    name: "TrillionDollarClub",
+    desc: "A futuristic black-and-white e-commerce platform for premium product discovery and curation — live at trilliondollarclub.vercel.app — with admin controls, Supabase auth, and Cloudinary media.",
+    bullets: [
+      "Supabase authentication with email/password and Google OAuth, JWT verified via RS256 JWKS",
+      "Role-based access control — admin panel to manage users, promote/demote roles, and curate products",
+      "Multi-image upload with drag-and-drop (up to 10 images) stored on Cloudinary with auto-optimization",
+      "FastAPI backend deployed serverless on Vercel with MongoDB Atlas for users and products",
+    ],
+    tags: ["React", "FastAPI", "MongoDB", "Supabase", "Cloudinary", "Redux Toolkit", "Vite"],
+    links: [
+      { label: "trilliondollarclub.vercel.app ↗", href: "https://trilliondollarclub.vercel.app", className: "project-link" },
+      { label: "GitHub →", href: "https://github.com/AdhilSiyad780/TrillionDollarClub2.0", className: "project-link gh" },
+    ],
+    badges: [{ type: "live", label: "Live" }, { type: "tag", label: "SaaS" }, { type: "tag", label: "E-Commerce" }],
+  },
+  {
+    num: "03 /",
     name: "Evara Shopping",
     desc: "A full-stack e-commerce platform with product listing, cart management, Razorpay payment integration, and order tracking.",
     bullets: [
@@ -224,7 +247,6 @@ const projects = [
     badges: [{ type: "tag", label: "E-Commerce" }],
   },
 ];
-
 const education = [
   { degree: "B.Sc Computer Science", school: "CM College of Arts and Science, Nadavayal, Wayanad", year: "2020 – 2023" },
   { degree: "Higher Secondary (12th)", school: "MTDMHSS Thondernad, Korome", year: "2018 – 2020" },
